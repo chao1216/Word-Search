@@ -1,0 +1,186 @@
+/*
+Chao Lin
+linc0@sewanee.edu
+Project 2
+CS 257
+*/
+
+---------------------------------------------------------------
+
+**How to compile**
+For Searches.java ---> java Searches.java
+For searchTestClass.java ---> javac searchTestClass.java
+For GenericArrayList.java ---> javac GenericArrayList.java
+For ArrayListTestClass.java ---> javac ArrayListTestClass.java
+(Note: when you compile the classes, you will receive warning about unchecked or unsafe operations)
+
+---------------------------------------------------------------
+**How to run** 
+(Note: only have to run test classes, and use command-line to pass file name to args[0])
+For searchTestClass.java ---> java searchTestClass _______
+For ArrayListTestClass.java ---> java ArrayListTestClass ________ 
+
+**In blank space, type the text file name**
+
+Test programs will use three different text files: 
+	1.american-words.35
+	2.american-words.80
+	3.dictionary.txt
+
+---------------------------------------------------------------
+**What will be printed when running test programs**
+(For searchTestClass)
+When you run searchTestClass, it will first print "Word to search for: ", then user would type a word that they want to search for. 
+
+If the word is found, then it will print "linearSearch says true, word exists, found at index (wherever) and binarySearch says true, the word exists" 
+
+If the word is not found, then it will asks the user "word not found, would you like to search for another word? (y/n)". If the user types "y", then it will repeat from the beginning. If the user types "n", the program terminates. 
+
+(For ArrayListTestClass)
+When you run ArrayListTestClass, it will first print "Word to search for: ", then suer would type a word that they want to search for.
+
+If the word is found, then it will print "word exists, it is at index (wherever)". If the word is not found, then it will ask "word not found, would you like to search for another word? (y/n)". If user types "n", then program terminates. If user types "y" program restarts. 
+
+
+**Description of tests and results**
+---------------------------------------------------------------
+(For searchTestClass reading american-words.35)
+Word to search for: acknowledgment (first word in the file)
+linearSearch says true, word exists, found at index 0 
+binarySearch says true, therefore, the word exists
+
+Word to search for: yodeling (last word in the file)
+linearSearch says true, word exists, found at index 990
+binarySearch says true, therefore, the word exists
+
+Word to search for: sepulcher
+linearSearch says true, word exists, found at index 782
+binarySearch says true, therefore, the word exists
+
+***WORDS THAT DO NOT EXIST***
+Word to search for: chao
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: turk
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: liz
+word not found, would you like to search for another word? (y/n)
+
+---------------------------------------------------------------
+(For searchTestClass reading american-words.80)
+Word to search for: acalephe (first word in the file)
+linearSearch says true, word exists, found at index 0 
+binarySearch says true, therefore, the word exists
+
+Word to search for: zygenid (last word in the file)
+linearSearch says true, word exists, found at index 4830
+binarySearch says true, therefore, the word exists
+
+Word to search for: hypogea
+linearSearch says true, word exists, found at index 2141
+binarySearch says true, therefore, the word exists
+
+***WORDS THAT DO NOT EXIST***
+Word to search for: life
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: is
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: beautiful
+word not found, would you like to search for another word? (y/n)
+
+---------------------------------------------------------------
+(For searchTestClass reading dictionary.txt)
+Word to search for: aa (first word in the file)
+linearSearch says true, word exists, found at index 0 
+binarySearch says true, therefore, the word exists
+
+Word to search for: zyzzyvas (last word in the file)
+linearSearch says true, word exists, found at index 127141 
+binarySearch says true, therefore, the word exists
+
+Word to search for: meager
+linearSearch says true, word exists, found at index 67303
+binarySearch says true, therefore, the word exists
+
+***WORDS THAT DO NOT EXIST***
+Word to search for: liz
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: esta
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: divertida
+word not found, would you like to search for another word? (y/n)
+
+---------------------------------------------------------------
+(For ArrayListTestClas american-words.35)
+Word to search for: capitalizing
+word exists, it is at index 82
+
+Word to search for: hypnotized
+word exists, it is at index 397
+
+Word to search for: parceled
+word exists, it is at index 640
+
+***WORDS THAT DO NOT EXITS***
+Word to search for: sky
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: bubble
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: gum
+word not found, would you like to search for another word? (y/n)
+
+---------------------------------------------------------------
+(For ArrayListTestClas american-words.80)
+Word to search for: americanization
+word exists, it is at index 86
+
+Word to search for: apostolize
+word exists, it is at index 173
+
+Word to search for: nanogram
+word exists, it is at index 2771
+
+***WORDS THAT DO NOT EXITS***
+Word to search for: uuuuu
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: wakkkaa
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: nuaaa
+word not found, would you like to search for another word? (y/n)
+
+---------------------------------------------------------------
+(For ArrayListTestClas dictionary.txt)
+Word to search for: abdicate
+word exists, it is at index 97
+
+Word to search for: unscrambling
+word exists, it is at index 119673
+
+Word to search for: jutting
+word exists, it is at index 60172
+
+***WORDS THAT DO NOT EXITS***
+Word to search for: hikeee
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: divino
+word not found, would you like to search for another word? (y/n)
+
+Word to search for: nomorewords
+word not found, would you like to search for another word? (y/n)
+
+
+
+
+
+
+
